@@ -1,0 +1,4 @@
+RateMe Air Native Extension
+
+*Jun 29, 2016 - V1.0.0*
+* beginning of the journey!
