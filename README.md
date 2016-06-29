@@ -115,3 +115,8 @@ http://www.myflashlabs.com/product/rate-app-air-native-extension/
 # Changelog
 *Jun 29, 2016 - V1.0.0*
 * beginning of the journey!
+
+# DISCLAIMER
+This ANE has been built based on the following two Libraries:
+* https://github.com/hotchemi/Android-Rate
+* https://github.com/nicklockwood/iRate
