@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/21.0">
+<application xmlns="http://ns.adobe.com/air/application/24.0">
   <id>com.doitflash.rateme</id>
-  <versionNumber>1.0.0</versionNumber>
+  <versionNumber>1.1.0</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exRateMe</filename>
   <name>RateMe</name>
@@ -9,6 +9,9 @@
     <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
 	
 	<uses-permission android:name="android.permission.INTERNET" />
+		
+	<!--The new Permission thing on Android works ONLY if you are targetting Android SDK 23 or higher-->
+	<uses-sdk android:targetSdkVersion="23"/>
 	
 	<application>
 		
@@ -86,6 +89,10 @@
   <extensions>
 	
 	<extensionID>com.myflashlab.air.extensions.rateMe</extensionID>
+	
+	<!-- The following dependency ANEs are only required when compiling for Android -->
+	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport</extensionID>
+    <extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 	
   </extensions>
 </application>

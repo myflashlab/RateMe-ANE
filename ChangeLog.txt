@@ -1,4 +1,9 @@
 RateMe Air Native Extension
 
+*Nov 09, 2016 - V1.1.0*
+* Optimized for Android manual permissions if you are targeting AIR SDK 24+
+* From now on, this ANE will depend on androidSupport.ane and overrideAir.ane on the Android side
+
+
 *Jun 29, 2016 - V1.0.0*
 * beginning of the journey!

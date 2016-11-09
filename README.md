@@ -1,5 +1,5 @@
-# RateMe ANE V1.0.0 for Android+iOS
-Rate Air Native Extension lets you ask your users to rate your app in the most efficient way. i.e you can make sure you are asking for users feedback only when you are sure that they have found your app interesting and are using it frequently. This will help you avoid bad reviews as much as possible.
+# RateMe ANE V1.1.0 for Android+iOS
+Rate AIR Native Extension lets you ask your users to rate your app in the most efficient way. i.e you can make sure you are asking for users feedback only when you are sure that they have found your app interesting and are using it frequently. This will help you avoid bad reviews as much as possible.
 
 **Main Features:**
 * Set the number of days from your app install time before promoting the rating dialog
@@ -16,7 +16,7 @@ Rate Air Native Extension lets you ask your users to rate your app in the most e
 **NOTICE**: the demo ANE works only after you hit the "OK" button in the dialog which opens. in your tests make sure that you are NOT calling other ANE methods prior to hitting the "OK" button.
 [Download the ANE](https://github.com/myflashlab/RateMe-ANE/tree/master/FD/lib)
 
-# Air Usage
+# AIR Usage
 For more detailed usage sample [check the demo project](https://github.com/myflashlab/RateMe-ANE/blob/master/FD/src/Main.as)
 ```actionscript
 import com.myflashlab.air.extensions.rateme.RateMe;
@@ -72,7 +72,7 @@ RateMe.api.storeType = RateMe.GOOGLEPLAY; // or RateMe.AMAZON
 RateMe.api.monitor();
 ```
 
-# Air .xml manifest
+# AIR .xml manifest
 ```xml
 <!--
 FOR ANDROID:
@@ -94,15 +94,33 @@ FOR iOS:
 Embedding the ANE:
 -->
   <extensions>
+
 	<extensionID>com.myflashlab.air.extensions.rateMe</extensionID>
+	
+	<!-- The following dependency ANEs are only required when compiling for Android -->
+	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport</extensionID>
+	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
+	
   </extensions>
 -->
 ```
 
 # Requirements 
-1. Android API 10 or higher
-2. iOS SDK 7.0 or higher
-3. Air SDK 20 or higher
+* This ANE is dependent on **androidSupport.ane** and **overrideAir.ane**. Download them from [here](https://github.com/myflashlab/common-dependencies-ANE).
+* Android API 10 or higher
+* iOS SDK 7.0 or higher
+* AIR SDK 20 or higher
+
+# Permissions
+If you are targeting AIR 24 or higher, you need to [take care of the permissions mannually](http://www.myflashlabs.com/adobe-air-app-permissions-android-ios/). Below are the list of Permissions this ANE might require. (Note: *Necessary Permissions* are those that the ANE will NOT work without them and *Optional Permissions* are those which are needed only if you are using some specific features in the ANE.)
+
+Check out the demo project available at this repository to see how we have used our [PermissionCheck ANE](http://www.myflashlabs.com/product/native-access-permission-check-settings-menu-air-native-extension/) to ask for the permissions.
+
+**Necessary Permissions:**  
+none
+
+**Optional Permissions:**  
+none
 
 # Commercial Version
 http://www.myflashlabs.com/product/rate-app-air-native-extension/
@@ -113,6 +131,11 @@ http://www.myflashlabs.com/product/rate-app-air-native-extension/
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
 
 # Changelog
+*Nov 09, 2016 - V1.1.0*
+* Optimized for Android manual permissions if you are targeting AIR SDK 24+
+* From now on, this ANE will depend on androidSupport.ane and overrideAir.ane on the Android side
+
+
 *Jun 29, 2016 - V1.0.0*
 * beginning of the journey!
 
