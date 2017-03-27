@@ -31,7 +31,7 @@ import com.myflashlab.air.extensions.rateme.RateMeEvents;
 // you know that already, yes, but you don't need to add it here because the ANE will
 // add that automatically. so if your package ID is "your.app", ANE will change it to 
 // "air.your.app". Yet, if you enter "air.your.app", the ANE will not change it.
-RateMe.init(true, "com.site.app");
+RateMe.init(true, "com.myflashlabs.app");
 
 // add listeners to know user interaction with the RateMe dialog
 RateMe.api.addEventListener(RateMeEvents.USER_ATTEMPT_TO_RATE, onUserAttemptToRate);
@@ -84,9 +84,9 @@ FOR ANDROID:
 <!--
 FOR iOS:
 -->
-<!--iOS 7.0 or higher can support this ANE-->
+<!--iOS 8.0 or higher can support this ANE-->
 <key>MinimumOSVersion</key>
-<string>7.0</string>
+<string>8.0</string>
 
 
 
