@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <application xmlns="http://ns.adobe.com/air/application/24.0">
   <id>com.doitflash.rateme</id>
-  <versionNumber>1.1.0</versionNumber>
+  <versionNumber>1.1.1</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exRateMe</filename>
   <name>RateMe</name>
@@ -37,9 +37,9 @@
 	  
 	 <InfoAdditions><![CDATA[
 	
-		<!--iOS 7.0 or higher can support this ANE-->
+		<!--iOS 8.0 or higher can support this ANE-->
 		<key>MinimumOSVersion</key>
-		<string>7.0</string>
+		<string>8.0</string>
 		 
 		<key>UIPrerenderedIcon</key>
 		<true/>
@@ -90,7 +90,7 @@
 	
 	<extensionID>com.myflashlab.air.extensions.rateMe</extensionID>
 	
-	<!-- The following dependency ANEs are only required when compiling for Android -->
+	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
 	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport</extensionID>
     <extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 	

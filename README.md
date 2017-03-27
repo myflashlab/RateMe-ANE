@@ -1,4 +1,4 @@
-# RateMe ANE V1.1.0 for Android+iOS
+# RateMe ANE V1.1.1 for Android+iOS
 Rate AIR Native Extension lets you ask your users to rate your app in the most efficient way. i.e you can make sure you are asking for users feedback only when you are sure that they have found your app interesting and are using it frequently. This will help you avoid bad reviews as much as possible.
 
 **Main Features:**
@@ -97,7 +97,7 @@ Embedding the ANE:
 
 	<extensionID>com.myflashlab.air.extensions.rateMe</extensionID>
 	
-	<!-- The following dependency ANEs are only required when compiling for Android -->
+	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
 	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport</extensionID>
 	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 	
@@ -107,8 +107,8 @@ Embedding the ANE:
 
 # Requirements 
 * This ANE is dependent on **androidSupport.ane** and **overrideAir.ane**. Download them from [here](https://github.com/myflashlab/common-dependencies-ANE).
-* Android API 10 or higher
-* iOS SDK 7.0 or higher
+* Android API 15 or higher
+* iOS SDK 8.0 or higher
 * AIR SDK 20 or higher
 
 # Permissions
@@ -131,6 +131,11 @@ http://www.myflashlabs.com/product/rate-app-air-native-extension/
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
 
 # Changelog
+*Mar 27, 2017 - V1.1.1*
+* Updated with the latest version of the OverrideAir and from now on you will need this dependency even if you are building for iOS
+* min iOS version to support this ANE is 8.0 from now on.
+* min Android version to support this ANE is 15 from now on.
+
 *Nov 09, 2016 - V1.1.0*
 * Optimized for Android manual permissions if you are targeting AIR SDK 24+
 * From now on, this ANE will depend on androidSupport.ane and overrideAir.ane on the Android side

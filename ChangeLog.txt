@@ -1,5 +1,10 @@
 RateMe Air Native Extension
 
+*Mar 27, 2017 - V1.1.1*
+* Updated with the latest version of the OverrideAir and from now on you will need this dependency even if you are building for iOS
+* min iOS version to support this ANE is 8.0 from now on.
+* min Android version to support this ANE is 15 from now on.
+
 *Nov 09, 2016 - V1.1.0*
 * Optimized for Android manual permissions if you are targeting AIR SDK 24+
 * From now on, this ANE will depend on androidSupport.ane and overrideAir.ane on the Android side
