@@ -1,5 +1,8 @@
 RateMe Air Native Extension
 
+*Dec 15, 2017 - V1.1.2*
+* Optimized for [ANE-LAB software](https://github.com/myflashlab/ANE-LAB).
+
 *Mar 27, 2017 - V1.1.1*
 * Updated with the latest version of the OverrideAir and from now on you will need this dependency even if you are building for iOS
 * min iOS version to support this ANE is 8.0 from now on.

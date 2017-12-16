@@ -1,4 +1,4 @@
-# RateMe ANE V1.1.1 for Android+iOS
+# RateMe ANE V1.1.2 for Android+iOS
 Rate AIR Native Extension lets you ask your users to rate your app in the most efficient way. i.e you can make sure you are asking for users feedback only when you are sure that they have found your app interesting and are using it frequently. This will help you avoid bad reviews as much as possible.
 
 **Main Features:**
@@ -13,11 +13,10 @@ Rate AIR Native Extension lets you ask your users to rate your app in the most e
 # asdoc
 [find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/rateme/package-detail.html)  
 
-**NOTICE**: the demo ANE works only after you hit the "OK" button in the dialog which opens. in your tests make sure that you are NOT calling other ANE methods prior to hitting the "OK" button.
-[Download the ANE](https://github.com/myflashlab/RateMe-ANE/tree/master/FD/lib)
+[Download demo ANE](https://github.com/myflashlab/RateMe-ANE/tree/master/AIR/lib)
 
 # AIR Usage
-For more detailed usage sample [check the demo project](https://github.com/myflashlab/RateMe-ANE/blob/master/FD/src/Main.as)
+For more detailed usage sample [check the demo project](https://github.com/myflashlab/RateMe-ANE/blob/master/AIR/src/Main.as)
 ```actionscript
 import com.myflashlab.air.extensions.rateme.RateMe;
 import com.myflashlab.air.extensions.rateme.RateMeEvents;
@@ -131,6 +130,9 @@ http://www.myflashlabs.com/product/rate-app-air-native-extension/
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
 
 # Changelog
+*Dec 15, 2017 - V1.1.2*
+* Optimized for [ANE-LAB software](https://github.com/myflashlab/ANE-LAB).
+
 *Mar 27, 2017 - V1.1.1*
 * Updated with the latest version of the OverrideAir and from now on you will need this dependency even if you are building for iOS
 * min iOS version to support this ANE is 8.0 from now on.
