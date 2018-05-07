@@ -9,6 +9,7 @@ Rate AIR Native Extension lets you ask your users to rate your app in the most e
 * Supports iOS app versioning rating system
 * Choose between GooglePlay or Amazon stores.
 * debug mode lets you point to other apps when you hit the *Rate Now!* button
+* Optionally use the new iOS API **SKStoreReviewController**
 
 # asdoc
 [find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/rateme/package-detail.html)  
@@ -110,17 +111,6 @@ Embedding the ANE:
 * Android API 15 or higher
 * iOS SDK 8.0 or higher
 * AIR SDK 20 or higher
-
-# Permissions
-If you are targeting AIR 24 or higher, you need to [take care of the permissions mannually](http://www.myflashlabs.com/adobe-air-app-permissions-android-ios/). Below are the list of Permissions this ANE might require. (Note: *Necessary Permissions* are those that the ANE will NOT work without them and *Optional Permissions* are those which are needed only if you are using some specific features in the ANE.)
-
-Check out the demo project available at this repository to see how we have used our [PermissionCheck ANE](http://www.myflashlabs.com/product/native-access-permission-check-settings-menu-air-native-extension/) to ask for the permissions.
-
-**Necessary Permissions:**  
-none
-
-**Optional Permissions:**  
-none
 
 # Commercial Version
 http://www.myflashlabs.com/product/rate-app-air-native-extension/
