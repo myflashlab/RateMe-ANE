@@ -110,7 +110,7 @@ Embedding the ANE:
 * This ANE is dependent on **androidSupport.ane** and **overrideAir.ane**. Download them from [here](https://github.com/myflashlab/common-dependencies-ANE).
 * Android API 15 or higher
 * iOS SDK 8.0 or higher
-* AIR SDK 20 or higher
+* AIR SDK 29 or higher
 
 # Commercial Version
 http://www.myflashlabs.com/product/rate-app-air-native-extension/
