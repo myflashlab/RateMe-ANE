@@ -1,5 +1,8 @@
 RateMe Air Native Extension
 
+*May 7, 2018 - V1.2.0*
+* Added support for iOS *SKStoreReviewController* API. enable it by setting the following property. ```RateMe.api.useSKStoreReviewController = true;```
+
 *Dec 15, 2017 - V1.1.2*
 * Optimized for [ANE-LAB software](https://github.com/myflashlab/ANE-LAB).
 

@@ -7,8 +7,9 @@ package
 	import com.doitflash.text.modules.MySprite;
 	
 	import com.luaye.console.C;
-	
-	import flash.desktop.NativeApplication;
+import com.myflashlab.air.extensions.dependency.OverrideAir;
+
+import flash.desktop.NativeApplication;
 	import flash.desktop.SystemIdleMode;
 	import flash.display.Sprite;
 	import flash.display.StageAlign;
@@ -140,8 +141,16 @@ package
 			}
 		}
 		
+		private function myDebuggerDelegate($ane:String, $class:String, $msg:String):void
+		{
+			trace("\t "+$ane+": "+$msg);
+		}
+		
 		private function init():void
 		{
+			// remove this line in production build or pass null as the delegate
+			OverrideAir.enableDebugger(myDebuggerDelegate);
+			
 			// when releasing your app, make sure to initialize the ANE like: RateMe.init();
 			// setting the application id is not required. This will be done automatically but
 			// when debugging, considering that your app might not be available on app stores,
@@ -184,6 +193,7 @@ package
 			RateMe.api.appStoreID = 0;
 			RateMe.api.appStoreGenreID = 0;
 			RateMe.api.ratingsURL = "";
+			RateMe.api.useSKStoreReviewController = true;
 			
 			// configure Android specific settings
 			RateMe.api.storeType = RateMe.GOOGLEPLAY; // or RateMe.AMAZON
@@ -200,7 +210,7 @@ package
 			function shouldPromote(e:MouseEvent):void
 			{
 				// Always returns true when debugging mode is ON
-				trace("shouldPromote = " + RateMe.api.shouldPromote)
+				trace("shouldPromote = " + RateMe.api.shouldPromote);
 				
 				if (RateMe.api.shouldPromote)
 				{

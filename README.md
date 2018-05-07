@@ -1,4 +1,4 @@
-# RateMe ANE V1.1.2 for Android+iOS
+# RateMe ANE V1.2.0 for Android+iOS
 Rate AIR Native Extension lets you ask your users to rate your app in the most efficient way. i.e you can make sure you are asking for users feedback only when you are sure that they have found your app interesting and are using it frequently. This will help you avoid bad reviews as much as possible.
 
 **Main Features:**
@@ -63,6 +63,7 @@ RateMe.api.onlyPromptIfLatestVersion = false;
 RateMe.api.appStoreID = 0;
 RateMe.api.appStoreGenreID = 0;
 RateMe.api.ratingsURL = "";
+RateMe.api.useSKStoreReviewController = true;
 
 // configure Android specific settings
 RateMe.api.storeType = RateMe.GOOGLEPLAY; // or RateMe.AMAZON
@@ -130,6 +131,9 @@ http://www.myflashlabs.com/product/rate-app-air-native-extension/
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
 
 # Changelog
+*May 7, 2018 - V1.2.0*
+* Added support for iOS *SKStoreReviewController* API. enable it by setting the following property. ```RateMe.api.useSKStoreReviewController = true;```
+
 *Dec 15, 2017 - V1.1.2*
 * Optimized for [ANE-LAB software](https://github.com/myflashlab/ANE-LAB).
 
