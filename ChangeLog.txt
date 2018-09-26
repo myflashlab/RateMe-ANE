@@ -1,5 +1,8 @@
 RateMe Air Native Extension
 
+*Sep 23, 2018 - V1.2.1*
+* Removed androidSupport dependency
+
 *May 7, 2018 - V1.2.0*
 * Added support for iOS *SKStoreReviewController* API. enable it by setting the following property. ```RateMe.api.useSKStoreReviewController = true;```
 

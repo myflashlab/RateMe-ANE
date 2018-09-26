@@ -1,4 +1,4 @@
-# RateMe ANE V1.2.0 for Android+iOS
+# RateMe ANE V1.2.1 for Android+iOS
 Rate AIR Native Extension lets you ask your users to rate your app in the most efficient way. i.e you can make sure you are asking for users feedback only when you are sure that they have found your app interesting and are using it frequently. This will help you avoid bad reviews as much as possible.
 
 **Main Features:**
@@ -75,31 +75,11 @@ RateMe.api.monitor();
 
 # AIR .xml manifest
 ```xml
-<!--
-FOR ANDROID:
--->
-<uses-permission android:name="android.permission.INTERNET" />
-
-
-
-<!--
-FOR iOS:
--->
-<!--iOS 8.0 or higher can support this ANE-->
-<key>MinimumOSVersion</key>
-<string>8.0</string>
-
-
-
-<!--
-Embedding the ANE:
--->
   <extensions>
 
 	<extensionID>com.myflashlab.air.extensions.rateMe</extensionID>
 	
-	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
-	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport</extensionID>
+	<!-- dependency ANEs https://github.com/myflashlab/common-dependencies-ANE -->
 	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 	
   </extensions>
@@ -107,20 +87,22 @@ Embedding the ANE:
 ```
 
 # Requirements 
-* This ANE is dependent on **androidSupport.ane** and **overrideAir.ane**. Download them from [here](https://github.com/myflashlab/common-dependencies-ANE).
-* Android API 15 or higher
-* iOS SDK 8.0 or higher
-* AIR SDK 29 or higher
+* Android API 15+
+* iOS SDK 8.0+
+* AIR SDK 30+
 
 # Commercial Version
 http://www.myflashlabs.com/product/rate-app-air-native-extension/
 
-![RateMe ANE](http://www.myflashlabs.com/wp-content/uploads/2016/06/product_adobe-air-ane-extension-rate-me-1-595x738.jpg)
+![RateMe ANE](https://www.myflashlabs.com/wp-content/uploads/2016/06/product_adobe-air-ane-extension-rate-me-1-595x738.jpg)
 
 # Tutorials
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
 
 # Changelog
+*Sep 23, 2018 - V1.2.1*
+* Removed androidSupport dependency
+
 *May 7, 2018 - V1.2.0*
 * Added support for iOS *SKStoreReviewController* API. enable it by setting the following property. ```RateMe.api.useSKStoreReviewController = true;```
 

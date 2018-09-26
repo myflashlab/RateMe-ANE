@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/29.0">
+<application xmlns="http://ns.adobe.com/air/application/30.0">
   <id>com.doitflash.rateme</id>
-  <versionNumber>1.2.0</versionNumber>
+  <versionNumber>1.2.1</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exRateMe</filename>
   <name>RateMe</name>
@@ -9,9 +9,7 @@
     <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
 	
 	<uses-permission android:name="android.permission.INTERNET" />
-		
-	<!--The new Permission thing on Android works ONLY if you are targetting Android SDK 23 or higher-->
-	<uses-sdk android:targetSdkVersion="23"/>
+	<uses-sdk android:targetSdkVersion="26"/>
 	
 	<application>
 		
@@ -32,9 +30,7 @@
   </android>
 	
   <iPhone>
-    <!--https://developer.apple.com/library/ios/documentation/general/reference/infoplistkeyreference/Articles/iPhoneOSKeys.html-->
-    <!--http://help.adobe.com/en_US/air/build/WSfffb011ac560372f7e64a7f12cd2dd1867-8000.html-->
-	  
+
 	 <InfoAdditions><![CDATA[
 	
 		<!--iOS 8.0 or higher can support this ANE-->
@@ -102,8 +98,7 @@
 	
 	<extensionID>com.myflashlab.air.extensions.rateMe</extensionID>
 	
-	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
-	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport</extensionID>
+	<!-- dependency ANEs https://github.com/myflashlab/common-dependencies-ANE -->
     <extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 	
   </extensions>
