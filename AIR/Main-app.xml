@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <application xmlns="http://ns.adobe.com/air/application/30.0">
   <id>com.doitflash.rateme</id>
-  <versionNumber>1.2.1</versionNumber>
+  <versionNumber>1.2.3</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exRateMe</filename>
   <name>RateMe</name>

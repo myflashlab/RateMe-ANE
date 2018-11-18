@@ -1,4 +1,4 @@
-# RateMe ANE V1.2.1 for Android+iOS
+# RateMe ANE V1.2.3 for Android+iOS
 Rate AIR Native Extension lets you ask your users to rate your app in the most efficient way. i.e you can make sure you are asking for users feedback only when you are sure that they have found your app interesting and are using it frequently. This will help you avoid bad reviews as much as possible.
 
 **Main Features:**
@@ -100,6 +100,10 @@ http://www.myflashlabs.com/product/rate-app-air-native-extension/
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
 
 # Changelog
+*Nov 18, 2018 - V1.2.3*
+* Works with OverrideAir ANE V5.6.1 or higher
+* Works with ANELAB V1.1.26 or higher
+
 *Sep 23, 2018 - V1.2.1*
 * Removed androidSupport dependency
 
