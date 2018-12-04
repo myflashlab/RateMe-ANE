@@ -92,9 +92,9 @@ RateMe.api.monitor();
 * AIR SDK 30+
 
 # Commercial Version
-http://www.myflashlabs.com/product/rate-app-air-native-extension/
+https://www.myflashlabs.com/product/rate-app-air-native-extension/
 
-![RateMe ANE](https://www.myflashlabs.com/wp-content/uploads/2016/06/product_adobe-air-ane-extension-rate-me-1-595x738.jpg)
+[![RateMe ANE](https://www.myflashlabs.com/wp-content/uploads/2016/06/product_adobe-air-ane-extension-rate-me-2018-595x738.jpg)](https://www.myflashlabs.com/product/rate-app-air-native-extension/)
 
 # Tutorials
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
