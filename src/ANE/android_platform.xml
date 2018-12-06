@@ -1,0 +1,12 @@
+<platform xmlns="http://ns.adobe.com/air/extension/30.0">
+
+	<packagedResources>
+	
+		<packagedResource>
+			<packageName>com.myflashlab.rateme</packageName>
+			<folderName>com.myflashlab.rateme-res</folderName>
+		</packagedResource>
+		
+	</packagedResources>
+	
+</platform>

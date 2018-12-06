@@ -1,0 +1,68 @@
+<extension xmlns="http://ns.adobe.com/air/extension/30.0">
+  <id>com.myflashlab.air.extensions.rateMe</id>
+  <versionNumber>1.2.3</versionNumber>
+  <copyright>2018, MyFlashLabs Team. All rights reserved.</copyright>
+  <description>
+		<text xml:lang="en">Air Native Extension!</text> 
+  </description> 
+  <platforms>
+  
+    <platform name="Android-ARM">
+		<applicationDeployment>
+			<nativeLibrary>classes.jar</nativeLibrary>
+			<initializer>com.myflashlab.rateme.MyExtension</initializer>
+			<finalizer>com.myflashlab.rateme.MyExtension</finalizer>
+		</applicationDeployment>
+    </platform>
+	
+	<platform name="Android-x86">
+		<applicationDeployment>
+			<nativeLibrary>classes.jar</nativeLibrary>
+			<initializer>com.myflashlab.rateme.MyExtension</initializer>
+			<finalizer>com.myflashlab.rateme.MyExtension</finalizer>
+		</applicationDeployment>
+    </platform>
+	
+	<platform name="iPhone-ARM">
+		<applicationDeployment>
+			<nativeLibrary>libexRateMe.a</nativeLibrary>
+			<initializer>comMyflashlabRateMeExtensionInitializer</initializer>
+			<finalizer>comMyflashlabRateMeExtensionFinalizer</finalizer>
+		</applicationDeployment>
+	</platform>
+	
+	<platform name="default"> 
+		<applicationDeployment/>
+	</platform> 
+	
+  </platforms>
+</extension>
+
+<!-- ANE SETUP
+{
+	"minAirVersion":"30.0",
+	"minSwfVersion":"36",
+	"miniOS":"8.0",
+	"minAndroid":"15",
+	"platforms":[
+		{
+			"platform":"android",
+			"dependencies":[
+				{
+					"id":"com.myflashlab.air.extensions.dependency.overrideAir",
+					"v":"5.6.0"
+				}
+			]
+		},
+		{
+			"platform":"ios",
+			"dependencies":[
+				{
+					"id":"com.myflashlab.air.extensions.dependency.overrideAir",
+					"v":"5.6.0"
+				}
+			]
+		}
+	]
+}
+-->

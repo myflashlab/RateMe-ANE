@@ -1,26 +1,37 @@
-# RateMe ANE V1.2.3 for Android+iOS
+# RateMe ANE for Adobe AIR apps #
 Rate AIR Native Extension lets you ask your users to rate your app in the most efficient way. i.e you can make sure you are asking for users feedback only when you are sure that they have found your app interesting and are using it frequently. This will help you avoid bad reviews as much as possible.
 
 **Main Features:**
-* Set the number of days from your app install time before promoting the rating dialog
-* Set the number of app launches before promoting the rating dialog
-* Set the number of days to remind a user to rate
-* Customize the messages shown in the rating dialog
-* Supports iOS app versioning rating system
-* Choose between GooglePlay or Amazon stores.
-* debug mode lets you point to other apps when you hit the *Rate Now!* button
-* Optionally use the new iOS API **SKStoreReviewController**
+1. Set the number of days from your app install time before promoting the rating dialog
+1. Set the number of app launches before promoting the rating dialog
+1. Set the number of days to remind a user to rate
+1. Customize the messages shown in the rating dialog
+1. Supports iOS app versioning rating system
+1. Choose between GooglePlay or Amazon stores.
+1. debug mode lets you point to other apps when you hit the *Rate Now!* button
+1. Optionally use the new iOS API **SKStoreReviewController**
 
-# asdoc
-[find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/rateme/package-detail.html)  
 
-[Download demo ANE](https://github.com/myflashlab/RateMe-ANE/tree/master/AIR/lib)
+* [Click here for ASDOC](https://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/rateme/package-detail.html)
+* [See the ANE setup requirements](https://github.com/myflashlab/RateMe-ANE/blob/master/src/ANE/extension.xml)
 
-# AIR Usage
-For more detailed usage sample [check the demo project](https://github.com/myflashlab/RateMe-ANE/blob/master/AIR/src/Main.as)
+**IMPORTANT:** Implementing ANEs in your AIR projects means you may be required to add some [dependencies](https://github.com/myflashlab/common-dependencies-ANE) or copy some frameworks or editing your app's manifest file. Our ANE setup instruction is designed in a human-readable format but you may still need to familiarize yourself with this format. [Read this post for more information](https://www.myflashlabs.com/understanding-ane-setup-instruction/)
+
+If you think manually setting up ANEs in your projects is confusing or time-consuming, you better check the [ANELAB Software](https://github.com/myflashlab/ANE-LAB/).
+
+[![The ANE-LAB Software](https://www.myflashlabs.com/wp-content/uploads/2017/12/myflashlabs-ANE-LAB_features.jpg)](https://github.com/myflashlab/ANE-LAB/)
+
+# Tech Support #
+If you need our professional support to help you with implementing and using the ANE in your project, you can join [MyFlashLabs Club](https://www.myflashlabs.com/product/myflashlabs-club-membership/) or buy a [premium support package](https://www.myflashlabs.com/product/myflashlabs-support/). Otherwise, you may create new issues at this repository and the community might help you.
+
+# DISCLAIMER #
+This ANE has been built based on the following two Libraries:
+* https://github.com/hotchemi/Android-Rate
+* https://github.com/nicklockwood/iRate
+
+# AIR Usage #
 ```actionscript
-import com.myflashlab.air.extensions.rateme.RateMe;
-import com.myflashlab.air.extensions.rateme.RateMeEvents;
+import com.myflashlab.air.extensions.rateme.*;
 
 // when releasing your app, make sure to initialize the ANE like: RateMe.init();
 // setting the application id is not required. This will be done automatically but
@@ -73,60 +84,16 @@ RateMe.api.storeType = RateMe.GOOGLEPLAY; // or RateMe.AMAZON
 RateMe.api.monitor();
 ```
 
-# AIR .xml manifest
-```xml
-  <extensions>
+Are you using this ANE in your project? Maybe you'd like to buy us a beer :beer:?
 
-	<extensionID>com.myflashlab.air.extensions.rateMe</extensionID>
-	
-	<!-- dependency ANEs https://github.com/myflashlab/common-dependencies-ANE -->
-	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
-	
-  </extensions>
--->
-```
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=payments@myflashlabs.com&lc=US&item_name=Donation+to+RateMe+ANE&no_note=0&cn=&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
 
-# Requirements 
-* Android API 15+
-* iOS SDK 8.0+
-* AIR SDK 30+
+Add your name to the below list? Donate anything more than $100 and it will be.
 
-# Commercial Version
-https://www.myflashlabs.com/product/rate-app-air-native-extension/
-
-[![RateMe ANE](https://www.myflashlabs.com/wp-content/uploads/2016/06/product_adobe-air-ane-extension-rate-me-2018-595x738.jpg)](https://www.myflashlabs.com/product/rate-app-air-native-extension/)
-
-# Tutorials
-[How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
-
-# Changelog
-*Nov 18, 2018 - V1.2.3*
-* Works with OverrideAir ANE V5.6.1 or higher
-* Works with ANELAB V1.1.26 or higher
-
-*Sep 23, 2018 - V1.2.1*
-* Removed androidSupport dependency
-
-*May 7, 2018 - V1.2.0*
-* Added support for iOS *SKStoreReviewController* API. enable it by setting the following property. ```RateMe.api.useSKStoreReviewController = true;```
-
-*Dec 15, 2017 - V1.1.2*
-* Optimized for [ANE-LAB software](https://github.com/myflashlab/ANE-LAB).
-
-*Mar 27, 2017 - V1.1.1*
-* Updated with the latest version of the OverrideAir and from now on you will need this dependency even if you are building for iOS
-* min iOS version to support this ANE is 8.0 from now on.
-* min Android version to support this ANE is 15 from now on.
-
-*Nov 09, 2016 - V1.1.0*
-* Optimized for Android manual permissions if you are targeting AIR SDK 24+
-* From now on, this ANE will depend on androidSupport.ane and overrideAir.ane on the Android side
-
-
-*Jun 29, 2016 - V1.0.0*
-* beginning of the journey!
-
-# DISCLAIMER
-This ANE has been built based on the following two Libraries:
-* https://github.com/hotchemi/Android-Rate
-* https://github.com/nicklockwood/iRate
+## Sponsored by... ##
+<table align="left">
+    <tr>
+        <td align="left"><img src="https://via.placeholder.com/128?text=LOGO" width="60" height="60"></td>
+        <td align="left"><a href="#">your_website.com</a><br>Your company motto can be here!</td>
+    </tr>
+</table>
