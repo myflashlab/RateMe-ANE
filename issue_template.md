@@ -1,0 +1,1 @@
+**NOTICE:** This ANE is now opensourced. If you need our professional help, [check here](https://github.com/myflashlab/RateMe-ANE/#tech-support).
