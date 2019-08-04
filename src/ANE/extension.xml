@@ -1,11 +1,19 @@
 <extension xmlns="http://ns.adobe.com/air/extension/30.0">
   <id>com.myflashlab.air.extensions.rateMe</id>
-  <versionNumber>1.2.3</versionNumber>
-  <copyright>2018, MyFlashLabs Team. All rights reserved.</copyright>
+  <versionNumber>1.2.31</versionNumber>
+  <copyright>2019, MyFlashLabs Team. All rights reserved.</copyright>
   <description>
 		<text xml:lang="en">Air Native Extension!</text> 
   </description> 
   <platforms>
+  
+    <platform name="Android-ARM64">
+		<applicationDeployment>
+			<nativeLibrary>classes.jar</nativeLibrary>
+			<initializer>com.myflashlab.rateme.MyExtension</initializer>
+			<finalizer>com.myflashlab.rateme.MyExtension</finalizer>
+		</applicationDeployment>
+    </platform>
   
     <platform name="Android-ARM">
 		<applicationDeployment>
@@ -42,7 +50,7 @@
 {
 	"minAirVersion":"30.0",
 	"minSwfVersion":"36",
-	"miniOS":"8.0",
+	"miniOS":"10.0",
 	"minAndroid":"15",
 	"platforms":[
 		{
@@ -50,7 +58,7 @@
 			"dependencies":[
 				{
 					"id":"com.myflashlab.air.extensions.dependency.overrideAir",
-					"v":"5.6.0"
+					"v":"6.1.11"
 				}
 			]
 		},
@@ -59,7 +67,7 @@
 			"dependencies":[
 				{
 					"id":"com.myflashlab.air.extensions.dependency.overrideAir",
-					"v":"5.6.0"
+					"v":"6.1.11"
 				}
 			]
 		}
